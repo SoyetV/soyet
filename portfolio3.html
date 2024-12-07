@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+
+        h2, h3 {
+            font-size: 24px; 
+        }
+
+        ul {
+            font-size: 20px; 
+        }
+
+        p {
+            font-size: 20px; 
+        }
+        .footer{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">PORTFOLIO 3</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+        
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                    <h1>What Are Number Systems?</h1>
+        <p>A number system is a structured method used to represent numbers using a specific set of symbols or digits. These symbols or digits are combined according to specific rules to express values and enable arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+        <p>In its simplest form, a number system is just a way to represent numbers so that we can understand, calculate, and communicate them. Number systems are foundational in both everyday human activities and specialized fields like computing, engineering, and cryptography.</p>
+        <p>In computers, number systems are essential for performing all types of operations. While humans generally use the decimal system, computers use binary. The relationship between different number systems (binary, octal, decimal, and hexadecimal) is fundamental in various technical fields, especially in computing, where different systems are often required to express different kinds of information.</p>
+        <h3>The main purposes of number systems are:</h3>
+        <ol>
+            <li><strong>Representation of Values:</strong> Number systems allow us to express values in a standardized manner.</li>
+            <li><strong>Mathematical Operations:</strong> Number systems provide the framework for arithmetic operations. In computing, this framework is used to perform tasks such as adding binary numbers to store data or manipulating images.</li>
+            <li><strong>Communication:</strong> Whether in financial calculations or computer programs, number systems enable the sharing of information, both for humans and machines.</li>
+        </ol>
+        
+        <h2>Types of Number Systems</h2>
+
+        <h3>1. Binary (Base-2)</h3>
+        <ul>
+            <li><strong>Definition:</strong> Binary is a base-2 number system, meaning it uses only two symbols, 0 and 1. These digits are called bits. Each bit represents a power of 2, with the rightmost bit representing 2<sup>0</sup>, the next 2<sup>1</sup>, and so on.</li>
+            <li><strong>Example:</strong> Consider the binary number 1011. We can convert it to decimal as follows: 
+                <p>1 × 2<sup>3</sup> + 0 × 2<sup>2</sup> + 1 × 2<sup>1</sup> + 1 × 2<sup>0</sup> = 8 + 0 + 2 + 1 = 11</p>
+                Thus, the binary number 1011 is equal to 11 in decimal.</li>
+            <li><strong>Use in Computing:</strong> Binary is the fundamental language of computers. Every computer operation, from basic arithmetic to running complex software, ultimately relies on binary. For example, in a computer processor, each transistor represents one binary state, either on (1) or off (0). Binary numbers are used to represent data in memory, including instructions, files, and graphics.</li>
+            <li><strong>Importance:</strong> The simplicity of the binary system makes it perfectly suited for digital electronics. Electrical circuits use two distinct states (on/off, high/low voltage) to represent binary digits. This makes it efficient and reliable for computers to work with binary data.</li>
+        </ul>
+
+        <h3>2. Decimal (Base-10)</h3>
+        <ul>
+            <li><strong>Definition:</strong> The decimal system is the base-10 system most commonly used by humans. It uses ten digits: 0 through 9. Each digit represents a power of 10, with the rightmost digit representing 10<sup>0</sup>, the next representing 10<sup>1</sup>, and so on.</li>
+            <li><strong>Example:</strong> Consider the decimal number 246. It can be expanded as follows: 
+                <p>2 × 10<sup>2</sup> + 4 × 10<sup>1</sup> + 6 × 10<sup>0</sup> = 200 + 40 + 6 = 246</p>
+                Thus, the decimal number 246 represents the value 246.</li>
+            <li><strong>Use in Everyday Life:</strong> The decimal system is used universally for everyday activities. All arithmetic operations in daily life—such as buying items in a store, budgeting, and measuring quantities—are done using decimal numbers.</li>
+            <li><strong>Historical Context:</strong> Decimal is likely used because humans have ten fingers. It is the most intuitive system for counting. Throughout history, it became the dominant system for arithmetic due to its simplicity and natural alignment with human anatomy.</li>
+        </ul>
+
+        <h3>3. Octal (Base-8)</h3>
+        <ul>
+            <li><strong>Definition:</strong> The octal system is a base-8 system, which means it uses eight symbols: 0 through 7. Each octal digit represents three binary digits (bits), making it a shorthand for representing binary numbers.</li>
+            <li><strong>Example:</strong> The octal number 17 can be expanded as:
+                <p>1 × 8<sup>1</sup> + 7 × 8<sup>0</sup> = 8 + 7 = 15 (in decimal)</p>
+                Thus, 17 in octal equals 15 in decimal.</li>
+            <li><strong>Historical Use in Computing:</strong> Octal was popular in early computing systems, especially when binary data needed to be condensed for easier human interaction. Since each octal digit corresponds to exactly three binary digits, it provided a simpler way for early computer engineers to work with binary numbers.</li>
+            <li><strong>Current Use:</strong> Octal is less commonly used today but can still be found in certain systems, particularly older ones. For example, Unix file permissions are often represented in octal format (e.g., chmod 755).</li>
+        </ul>
+
+        <h3>4. Hexadecimal (Base-16)</h3>
+        <ul>
+            <li><strong>Definition:</strong> Hexadecimal is a base-16 number system that uses sixteen symbols: 0-9 and A-F, where A represents 10, B represents 11, C represents 12, and so on, up to F, which represents 15. Each hexadecimal digit corresponds to four binary digits (bits).</li>
+            <li><strong>Example:</strong> Consider the hexadecimal number 2F. It can be expanded as:
+                <p>2 × 16<sup>1</sup> + 15 × 16<sup>0</sup> = 32 + 15 = 47 (in decimal)</p>
+                Thus, the hexadecimal number 2F equals 47 in decimal.</li>
+            <li><strong>Use in Computing:</strong> Hexadecimal is widely used in programming and debugging. It provides a more compact and human-readable way to represent binary data. For instance, memory addresses, machine code, and color codes are often represented in hexadecimal.</li>
+            <li><strong>Importance:</strong> Hexadecimal makes it easier for programmers to work with large binary numbers. Since each hex digit represents four binary digits, it’s much shorter and easier to work with than writing out long strings of binary digits.</li>
+        </ul>
+
+        <h2>What Are the Uses of Each Number System?</h2>
+
+        <h3>1. Binary (Base-2)</h3>
+        <ul>
+            <li><strong>Use in Digital Electronics and Computing:</strong> The binary number system is the foundation of modern computing. Computers use binary numbers to represent everything from simple data to complex program instructions.</li>
+            <li><strong>Signal Representation:</strong> Binary is also used for signal processing. In digital communication, binary codes are used to represent information transmitted across various mediums, such as cables or radio waves.</li>
+        </ul>
+
+        <h3>2. Decimal (Base-10)</h3>
+        <ul>
+            <li><strong>Use in Everyday Life:</strong> Decimal is the natural number system used in daily activities such as shopping, measuring, and general arithmetic.</li>
+            <li><strong>Science and Engineering:</strong> Decimal numbers are crucial in scientific calculations, where precision is needed, particularly in physics, engineering, and economics.</li>
+        </ul>
+
+        <h3>3. Octal (Base-8)</h3>
+        <ul>
+            <li><strong>Historical Use in Early Computers:</strong> Octal was widely used in the early days of computing, especially in machines like the PDP-8, because it simplified binary code into smaller, more manageable chunks.</li>
+            <li><strong>Modern Use in UNIX Systems:</strong> Even today, octal is used in some UNIX-like operating systems, particularly in file permissions (e.g., chmod 755).</li>
+        </ul>
+
+        <h3>4. Hexadecimal (Base-16)</h3>
+        <ul>
+            <li><strong>Use in Programming:</strong> Hexadecimal is extensively used in programming to represent binary numbers in a more readable and compact form.</li>
+            <li><strong>Memory Addresses and Machine Code:</strong> Hexadecimal is often used to represent memory addresses, error codes, and machine-level instructions in debugging and low-level programming.</li>
+        </ul>
+        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

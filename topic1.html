@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+
+        h2, h3 {
+            font-size: 24px; 
+        }
+
+        ul {
+            font-size: 20px; 
+        }
+
+        p {
+            font-size: 20px; 
+        }
+        .footer{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">COMPUTER SCIENCE AS DISCIPLINE</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h2>Computer Science As a Discipline</h2>
+    <p>This refers to the academic discipline related to and concerned with computing that deals with the study of algorithmic processes, computational machines, and computation itself.</p>
+    <p>It covers everything from theoretical studies of algorithms, computation, and information to the practical issues of implementing computational systems in hardware and software.</p>
+    <p>It deals with the theoretical foundations of information, algorithms, and the architectures of its computation, as well as practical techniques for their application.</p>
+    <p>This is a body of knowledge of computing (i.e., computer science) that is frequently described as the systematic study of algorithmic processes that describe and transform information: their theory, analysis, design, efficiency, implementation, and application.</p>
+    <p>Its intellectual processes, which are derived from other disciplines or fields (e.g., Mathematics), are the combination of theory, design, and abstraction.</p>
+    <p>The fundamental concern of computer science is determining what can and cannot be automated.</p>
+
+    <h3>Brief History</h3>
+    <p>The history of computer science began long before our modern discipline of computer science, usually appearing in forms like mathematics or physics. Developments in previous centuries alluded to the discipline that we now know as computer science.</p>
+    <p>This progression, from mechanical inventions and mathematical theories towards modern computer concepts and machines, led to the development of a major academic field, massive technological advancement across the Western world, and the basis of a massive worldwide trade and culture.</p>
+    <p>The discipline of computer science was born in the early 1940s with the confluence of algorithm theory, mathematical logic, and the invention of the stored-program electronic computer. Computer Science would not have developed greatly and be what it is today without the involvement of the great contributors of all time.</p>
+
+    <h3>Example Contributions</h3>
+    <ul>
+        <li><strong>Alan Mathison Turing (1912–1954):</strong> 
+            <p>An English mathematician and computer scientist who formalized the concepts of algorithms and computation through the Turing machine. He is widely regarded as the father of modern computing, having developed ideas for modern computers and artificial intelligence. During World War II, his work on breaking the Enigma code shortened the war by two years.</p>
+        </li>
+        <li><strong>Kurt Friedrich Godel (1906–1978):</strong> 
+            <p>A mathematician and logician known for proving the incompleteness theorem and contributing to the foundation of mathematical logic.</p>
+        </li>
+        <li><strong>Lady Ada Byron Lovelace (1815–1852):</strong> 
+            <p>Known as the first computer programmer, she worked with Charles Babbage's Analytical Engine and developed the first algorithm intended to be executed by a machine.</p>
+        </li>
+        <li><strong>Vannevar Bush (1890–1974):</strong> 
+            <p>An American engineer who developed analog computers and proposed the "memex," a hypothetical electromechanical device considered a precursor to modern computers.</p>
+        </li>
+        <li><strong>Howard Hathaway Aiken (1900–1973):</strong> 
+            <p>An American physicist who created the Harvard Mark I, a precursor to the modern computer, which contributed significantly to the war effort in World War II.</p>
+        </li>
+        <li><strong>Konrad Zuse (1910–1995):</strong> 
+            <p>A German engineer who invented the Z3, the world's first programmable computer, operational in 1941.</p>
+        </li>
+        <li><strong>John von Neumann (1903–1957):</strong> 
+            <p>A mathematician and polymath who contributed to game theory, cellular automata, and the development of the stored-program concept, forming the basis of modern computing.</p>
+        </li>
+    </ul>
+
+    <p>By the early 1960s, there was a sufficient body of knowledge to merit the first academic departments and degree programs. This discipline is also called:</p>
+    <ul>
+        <li>Computer Science and Engineering</li>
+        <li>Computing</li>
+        <li>Informatics</li>
+    </ul>
+
+    <h3>Computing Profession</h3>
+    <p>The computing profession is the people and institutions that have been created to take care of other people's concerns in information processing and coordination through worldwide communication systems.</p>
+    <p>The profession contains various specialties such as:</p>
+    <ul>
+        <li>Computer Science</li>
+        <li>Computer Engineering</li>
+        <li>Software Engineering</li>
+        <li>Information Systems</li>
+        <li>Domain-specific applications</li>
+        <li>Computer Systems</li>
+    </ul>
+    <p>The discipline of computer science is the body of knowledge and practices used by computing professionals in their work.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

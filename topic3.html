@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+        .footer{
+            color: #FFFFFF;
+        }
+        
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">HARDWARE CONCEPTS 1</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h1>Hardware Concepts</h1>
+
+    <h2>2.0 What is a Computer System?</h2>
+    <p>A computer system is a set of integrated devices that input, output, process, and store data and information. Computer systems are currently built around at least one digital processing device. There are five main hardware components in a computer system: Input, Processing, Storage, Output, and Communication devices.</p>
+
+    <h3>2.0.1 What is a Computer?</h3>
+    <p>A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming. Modern computers have the ability to follow generalized sets of operations, called programs. These programs enable computers to perform an extremely wide range of tasks.</p>
+    <p>One that computes; specifically: a programmable, usually electronic device that can store, retrieve, and process data.</p>
+
+    <h3>2.0.2 What is a System?</h3>
+    <p>A system is a group of interacting or interrelated entities that form a unified whole. A system is described by its spatial and temporal boundaries, surrounded and influenced by its environment, described by its structure and purpose, and expressed in its functioning. Systems are the subjects of study of systems theory.</p>
+    <p>A regularly interacting or interdependent group of items forming a unified whole.</p>
+
+    <h2>2.1 Computer Hardware</h2>
+    <p>The collection of physical elements that comprise a computer system. Computer hardware refers to the physical parts or components of a computer such as monitor, keyboard, hard drive disk, mouse, printers, graphic cards, sound cards, memory, motherboard, and chips, etc., all of which are physical objects that you can actually touch.</p>
+    <p>It is a collective term used to describe any of the physical components of an analog or digital computer. The term hardware distinguishes the tangible aspects of a computing device from software, which consists of written instructions that tell physical components what to do.</p>
+
+    <h3>2.1.1 Types of Computer Systems</h3>
+    <ul>
+        <li><strong>Supercomputers:</strong> The fastest and the most expensive computers. These huge computers are used to solve very complex science and engineering problems. Supercomputers get their processing power by taking advantage of parallel processing; they use lots of CPUs at the same time on one problem. Examples:
+            <ul>
+                <li>Summit, Oak Ridge National Laboratory (USA)</li>
+                <li>Sierra, Lawrence Livermore National Laboratory (USA)</li>
+                <li>Sunway TaihuLight, National Supercomputing Centre (Wuxi, China)</li>
+                <li>Tianhe-2A, National Supercomputing Centre (Guangzhou, China)</li>
+                <li>Frontier, Texas Advanced Computing Center, University of Texas (USA)</li>
+            </ul>
+        </li>
+        <li><strong>Mainframe:</strong> A computer that is similar to supercomputers in many aspects, the main difference being that supercomputers use all their raw power to focus on very few tasks, while mainframes are designed to perform thousands or millions of operations concurrently.</li>
+        <li><strong>Server Computer:</strong> A central computer that contains collections of data and programs, allowing connected users to share and store electronic data and applications. Examples include file servers and application servers.</li>
+        <li><strong>Workstations:</strong> High-end, expensive computers designed for complex procedures like science, math, and engineering calculations.</li>
+        <li><strong>Mid-range or Mini Computers:</strong> Smaller and less powerful than mainframes or supercomputers, but more powerful than personal computers. Often referred to as small or midsize servers.</li>
+        <li><strong>Micro Computers:</strong> Devices with a microprocessor as the central processing unit (CPU), commonly used for personal computing.</li>
+    </ul>
+
+    <h2>2.2 Basic Data Flow Between Hardware Devices</h2>
+    <p>Operations performed by a computer system:</p>
+    <ol>
+        <li>Input</li>
+        <li>Storage</li>
+        <li>Processing</li>
+        <li>Output</li>
+        <p><img src="images/Basic Data Flow Between Hardware Devices.jpg" alt="BSDFBHD"></p>
+    </ol>
+
+    <h3>2.2.1 Input</h3>
+    <p>Input refers to providing or giving data to the computer. Input devices send information to the CPU, enabling user interaction. Examples include the keyboard, mouse, joystick, microphone, scanner, and webcam.</p>
+
+    <h3>2.2.2 Processing</h3>
+    <p>Processing involves performing operations like arithmetic and logical computations. The CPU, also known as the processor or microprocessor, handles instructions and calculations from hardware components and software programs.</p>
+
+    <h3>2.2.3 Output</h3>
+    <p>Output is data generated by a computer, such as results of a calculation or a printed document. Output devices include monitors and printers.</p>
+
+    <h3>2.2.4 Storage</h3>
+    <p>Storage refers to computer components and media used to retain digital data, such as hard disks or RAM. It ensures data and instructions are saved permanently.</p>
+    
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

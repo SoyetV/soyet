@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+
+        .footer{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">COMPUTER SYSTEM COMPONENTS: MOTHERBOARD</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h1>The Motherboard</h1>
+    <p>
+        It is the main printed circuit board in general-purpose computers and other expandable systems.
+        It holds and allows communication between many of the crucial electronic components of a system, such as the Central Processing Unit and memory, and provides connectors for other peripherals.
+    </p>
+    <p>
+        It is also called the system board because it is the main circuit board of the system unit and it has many electronic components attached to it and others are built into it.
+        It is a computer's central communications backbone connectivity point, through which all components and external peripherals connect.
+        It is the backbone that ties the computer’s components together at one spot and allows them to communicate to each other.
+    </p>
+    <p>
+        Without it, none of the computer components, such as the CPU, GPU, or hard disk drive, could interact.
+        Total motherboard functionality is necessary for a computer to work well.
+    </p>
+    <p class="note">
+        NOTE: Computer chips are small pieces of semiconducting material, usually silicon, on which integrated circuits are etched.
+        IC’s contain many microscopic pathways capable of carrying an electric current.
+        They contain components such as resistors, capacitors, and transistors.
+        Manufacturers package chips to be attached to a circuit board, such as the motherboard or adapter cards.
+    </p>
+    
+    <h2>The Motherboard Chipset Layout</h2>
+    <h3>Chipset:</h3>
+    <p>
+        It is a set of integrated chips on the motherboard that control communications.
+        After installing, one will need to review a number of elements and parameters: Northbridge cooling, CPU speed comparison and motherboard CPU combos efficiency (or not).
+        These chips control communications between the components of the motherboard and the CPU.
+        The main ones are the Northbridge and Southbridge.
+    </p>
+    
+    <h2>Types of Motherboard</h2>
+    <h3>Motherboard Form Factor:</h3>
+    <p>
+        It describes its general shape, the type of case and power supply it can use, and its physical organization (layout of the motherboard).
+        It refers to the physical size and shape (according to outside dimensions) of the board.
+        It also determines additional parameters such as the casing, power supply, mounting holes, and overall physical layout.
+    </p>
+    <p class="note">
+        NOTE: There are many types of motherboard, and one has to make sure of the correct specification when purchasing it.
+        Generally speaking, the larger the form factor, the more features and support functionality it will have.
+        Micro-ATX and Mini-ITX, however, are perfect for compact builds because their small size still manages to have all the essential features one would need for a quality PC.
+    </p>
+    
+    <h3>Motherboard Specifications:</h3>
+    <ul>
+        <li>RAM Slots: 8-16+</li>
+        <li>GPU Slots: 4-8</li>
+        <li>SATA Ports: 6-16+</li>
+        <li>CPU Sockets: 1-4+</li>
+    </ul>
+    <ul>
+        <li>RAM Slots: 4</li>
+        <li>GPU Slots: 2-4</li>
+        <li>SATA Ports: 6-12</li>
+        <li>CPU Sockets: 1</li>
+    </ul>
+    <ul>
+        <li>RAM Slots: 2-4</li>
+        <li>GPU Slots: 1-2</li>
+        <li>SATA Ports: 4-8</li>
+        <li>CPU Sockets: 1</li>
+    </ul>
+    <ul>
+        <li>RAM Slots: 2</li>
+        <li>GPU Slots: 1</li>
+        <li>SATA Ports: 2-6</li>
+        <li>CPU Sockets: 1</li>
+    </ul>
+
+    <h2>Basic Parts of a Motherboard</h2>
+    <p>If you open up your desktop computer and take out the motherboard, you would probably get pretty confused about all the different parts. Depending on the make and model of your computer, it might look something like the following, which is an example of an older motherboard:</p>
+    <ul>
+        <li>Processor Socket</li>
+        <li>Memory Slots</li>
+        <li>Video Card Slot</li>
+        <li>Expansion Slots</li>
+        <li>IDE and SATA Ports</li>
+        <li>BIOS Chip and Battery</li>
+        <li>Northbridge and Southbridge</li>
+        <li>Power Connectors</li>
+        <li>Front Panel Connectors, USB Headers and Audio Header</li>
+        <li>Transistors/Diodes/Resistors/LED/Jumper Pins</li>
+        <li>Rear Connectors</li>
+    </ul>
+
+    <h2>Examples of Older Motherboards:</h2>
+    <p>... [Images of older motherboards would be placed here]</p>
+
+    <h2>The following is an example of a modern motherboard:</h2>
+    <p>... [Images of modern motherboards would be placed here]</p>
+
+    <h2>Please watch the following videos about motherboards:</h2>
+    <p>... [Video links would be placed here]</p>
+
+    <h1>The Processor</h1>
+    <p>
+        It is also called the Central Processing Unit (CPU), interprets and carries out the basic instructions that operate a computer.
+        It impacts overall computing power and manages most of the computer’s operations.
+        Most processor chips manufacturers offer multi-core processors (i.e., single chips with two or more separate processor cores).
+        Dual-core: 2 cores
+        Quad-core: 4 cores
+        Each core runs at a slower clock speed than a single-core processor, but still increase the overall performance.
+    </p>
+
+    <h2>Processor Socket</h2>
+    <p>
+        Motherboards are sub-categorized by the type of processor socket they have.
+        The processor socket (also called a CPU socket) is the connector on the motherboard that houses a CPU and forms the electrical interface and contact with the CPU.
+    </p>
+
+    <h3>A. PGA Processor Socket</h3>
+    <p>
+        Processor sockets use a Pin Grid Array (PGA) where pins on the underside of the processor connect to holes in the processor socket.
+        Computers based on the Intel x86 architecture include socket processors.
+    </p>
+
+    <h3>B. LGA Processor Socket</h3>
+    <p>
+        The Land Grid Array (LGA) is a type of surface-mount packaging for integrated circuits (ICs) that is notable for having the pins on the socket (when a socket is used) rather than the integrated circuit.
+    </p>
+
+    <h3>C. Components of a CPU</h3>
+    <p>The Central Processing Unit (CPU) consists of six main components:</p>
+    <ol>
+        <li>Control Unit (CU)</li>
+        <li>Arithmetic Logic Unit (ALU)</li>
+        <li>Registers</li>
+        <li>Cache</li>
+        <li>Buses</li>
+        <li>Clock</li>
+    </ol>
+
+    <h3>Control Unit:</h3>
+    <p>The CU provides several functions:</p>
+    <ul>
+        <li>Fetches, decodes, and executes instructions</li>
+        <li>Issues control signals that control the hardware</li>
+        <li>Moves data around the system</li>
+    </ul>
+
+    <h3>Arithmetic Logic Unit:</h3>
+    <p>The ALU performs calculations and makes logical decisions.</p>
+    <ul>
+        <li>It performs arithmetic and logical operations (decisions).</li>
+        <li>It acts as a gateway between primary memory and secondary storage.</li>
+    </ul>
+
+    <h3>Registers:</h3>
+    <p>Registers are small amounts of high-speed memory contained within the CPU.</p>
+    <ul>
+        <li>They are used by the processor to store small amounts of data needed during processing.</li>
+        <li>Different processors have different numbers of registers for different purposes.</li>
+    </ul>
+
+    <h3>Cache:</h3>
+    <p>Cache is a small amount of high-speed Random Access Memory (RAM) built directly within the processor.</p>
+
+    <h3>Buses:</h3>
+    <p>A bus is a high-speed internal connection used to send data and instructions between components in the CPU.</p>
+
+    <h3>Clock:</h3>
+    <p>The clock in the CPU is a timing device that synchronizes all of the processor’s activities.</p>
+    <h1>Motherboard and Processor Overview</h1>
+    
+    <h2>CPU System Clock</h2>
+    <p>The CPU system clock is a small quartz crystal circuit used to control the timing of all computer operations. It regulates the speed at which the microprocessor executes instructions, with each tick equating to a clock cycle.</p>
+    <p>Today, processors are super scalar, meaning they can execute more than one instruction per clock cycle. Clock speed, which is the pace of the system clock, is measured in megahertz (MHz) or gigahertz (GHz).</p>
+    <p>Current personal computers have clock speeds in the gigahertz range. One megahertz (MHz) equals one million ticks per second, while one gigahertz (GHz) equals one billion ticks per second.</p>
+    <p>Quartz is a type of crystal used to keep time in watches, computers, and other devices. The crystal vibrates exactly 60 times per minute when electricity is applied.</p>
+    <img src="quartz-crystal.jpg" alt="Quartz Crystal Example">
+    
+    <h2>Two Categories of Processors</h2>
+    
+    <h3>32-bit Processor</h3>
+    <p>The 32-bit processor was the primary processor used in all computers until the early 1990s. Intel Pentium processors and early AMD processors were 32-bit, which means that the operating system and software work with data units that are 32 bits wide.</p>
+    <p>Windows 95, 98, and XP are 32-bit operating systems. A 32-bit processor can only run a 32-bit operating system, and it cannot support a 64-bit OS.</p>
+    
+    <h3>64-bit Processor</h3>
+    <p>The 64-bit processor originated in 1961 with the IBM 7030 Stretch supercomputer, but it wasn't used in home computers until the early 2000s. Microsoft released a 64-bit version of Windows XP for use with 64-bit processors.</p>
+    <p>64-bit processors can run both 64-bit and 32-bit operating systems, but a 32-bit OS will not use the processor's full capability. A 64-bit processor cannot run 16-bit legacy programs.</p>
+    
+    <h2>Memory</h2>
+    <p>Memory consists of electronic components that store instructions waiting to be executed, data needed by those instructions, and results from processing. It stores operating systems, application programs, and data being processed.</p>
+    
+    <h3>Bytes and Addressable Memory</h3>
+    <p>A byte is the basic storage unit in memory. Instructions and data exist as bytes, and each byte resides temporarily at an address in memory.</p>
+    
+    <h3>Memory Sizes</h3>
+    <p>Manufacturers specify memory size in terms of bytes of available storage.</p>
+    
+    <h3>Types of Memory</h3>
+    <ul>
+        <li><strong>Volatile Memory</strong> - Loses its contents when power is turned off (e.g., RAM).</li>
+        <li><strong>Nonvolatile Memory</strong> - Does not lose its contents when power is off (e.g., ROM, Flash Memory).</li>
+    </ul>
+    
+    <h3>Random Access Memory (RAM)</h3>
+    <p>RAM is read and written to by the processor and other devices. It is the primary memory used for executing programs and storing operating system files.</p>
+    
+    <h3>Cache Memory</h3>
+    <p>Cache memory stores frequently used instructions and data to speed up processing times. There are L1, L2, and L3 caches with varying speeds and capacities.</p>
+    
+    <h3>Read-Only Memory (ROM)</h3>
+    <p>ROM stores permanent data and instructions, such as firmware, which cannot be easily modified.</p>
+    
+    <h3>Flash Memory</h3>
+    <p>Flash memory is a type of nonvolatile memory that can be electronically erased and rewritten, commonly used in mobile devices.</p>
+    
+    <h3>Complementary Metal-Oxide Semiconductors (CMOS)</h3>
+    <p>CMOS stores BIOS settings, including time, date, and hardware configurations. It is battery-backed to retain information when the computer is powered off.</p>
+    
+    <h3>Memory Access Time</h3>
+    <p>Access time is the amount of time it takes the processor to read data from memory. Faster access times improve the speed of the computer.</p>
+    
+    <h2>BIOS Chip and Battery</h2>
+    <p>The BIOS (Basic Input/Output System) initializes hardware during startup and provides services for operating systems and programs. It is stored on a non-volatile ROM or flash memory chip.</p>
+    <p>The BIOS performs the POST (Power-On Self Test) to check hardware before loading the operating system. It can also include security features like password protection.</p>
+    <p>A small CMOS battery powers the BIOS chip to maintain system configuration information like date and time when the computer is off.</p>
+    
+    <h2>Northbridge and Southbridge</h2>
+    <p>Northbridge is the chipset that communicates with the processor, memory, and cache, while Southbridge handles I/O functions like USB and SATA.</p>
+    
+    <h2>IDE and SATA Slots and Ports</h2>
+    <p>IDE and SATA are interfaces for connecting storage devices. SATA is the newer standard and offers faster speeds than IDE.</p>
+    
+    <h2>Expansion Slots</h2>
+    <p>Expansion slots allow additional cards, like video or sound cards, to be added to the motherboard, expanding the computer's capabilities.</p>
+    
+    <h2>Ports and Connectors</h2>
+    <p>Ports and connectors, like USB and FireWire, allow external devices to communicate with the computer. Examples include USB ports, SCSI ports, and HDMI.</p>
+    
+    <h2>Buses</h2>
+    <p>Buses allow devices within the system unit to communicate. The bus width determines how many bits can be transferred at once, and a computer's word size refers to how many bits the processor can handle at one time.</p>     
+    </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

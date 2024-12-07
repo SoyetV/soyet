@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+        .footer{
+            color: #FFFFFF;
+        }
+        
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">HARDWARE CONCEPTS 2</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h1>Computer Hardware</h1>
+                        <p>It refers to the physical components that a computer system requires to function or the physical elements that comprise a computer system.</p>
+                        <p>It includes the physical parts or components of a computer, such as the case, Central Processing Unit, monitor, mouse, keyboard, computer storage (e.g., hard disk drive), memory, graphics card, sound card, printers, speakers, motherboard, and others.</p>
+                        <p>It refers to the physical, tangible computer equipment and devices, which provide support for major functions such as input, processing (internal storage, computation and control), output, secondary storage (for data and programs), and communication.</p>
+                        
+                        <h2>Notes:</h2>
+                        <ul>
+                            <li><strong>Computer Hardware</strong> is a collective term used to describe any of the physical components of an analog or digital computer.</li>
+                            <li>The term hardware distinguishes the tangible aspects of a computing device from software (which consists of written instructions that tell physical components what to do).</li>
+                            <li>All of which are physical objects that you can actually touch.</li>
+                        </ul>
+                    
+                        <h2>Types of Computers or Computer Systems</h2>
+                    
+                        <h3>Supercomputers</h3>
+                        <p>The fastest and the most expensive computers. These huge computers are used to solve very complex science and engineering problems. They get their processing power by taking advantage of parallel processing; they use lots of CPUs at the same time on one problem. A typical supercomputer can do up to ten trillion individual calculations every second.</p>
+                        <h4>Examples:</h4>
+                        <ol>
+                            <li>Summit, Oak Ridge National Laboratory (USA)</li>
+                            <p><img src="images/01 Summit-Supercomputer.png" alt="Summit"></p>
+                            <li>Sierra, Lawrence Livermore National Laboratory (USA)</li>
+                            <p><img src="images/02 Sierra-Supercomputer.png" alt="">Sierra</p>
+                            <li>Sunway TaihuLight, National Supercomputing Centre (Wuxi, China)</li>
+                            <p><img src="images/03 TaihuLight-Supercomputer.png" alt="taihulight"></p>
+                            <li>Tianhe-2A, National Supercomputing Centre (Guangzhou, China)</li>
+                            <p><img src="images/04 Tianhe-2-Supercomputer.png" alt="tianhe"></p>
+                            <li>Frontier, Texas Advanced Computing Center, University of Texas (USA)</li>
+                            <p><img src="images/05 Frontera-Frontier-Supercomputer.png" alt="frontera"></p>
+                            <li>Piz Daint, Swiss National Supercomputing Centre</li>
+                            <p><img src="images/06 Piz-Daint-Supercomputer.png" alt="piz-daint"></p>
+                            <li>Trinity, Los Alamos National Laboratory (USA)</li>
+                            <p><img src="images/07 Trinity-Supercomputer.png" alt="trinity"></p>
+                            <li>AI Bridging Cloud Infrastructure (ABCI), National Institute of Advanced Industrial Science and Technology (JAPAN)</li>
+                            <p><img src="images/08 ABCI-Supercomputer.png" alt="ABCI"></p>
+                            <li>SuperMUC-NG, Leibniz Rechenzentrum (GERMANY)</li>
+                            <p><img src="images/09 SuperMUC-Supercomputer.png" alt="SuperMUC"></p>
+                            <li>Lassen, Lawrence Livermore National Laboratory (USA)</li>
+                            <p><img src="images/10 Lassen-Supercomputer.png" alt="Lassen"></p>                            
+                        </ol>
+                        
+                        <h3>Mainframes</h3>
+                        <p>These are computers that are similar to supercomputers in many aspects, the main difference between them is the fact that a supercomputer uses all its raw power to focus on very few tasks, while the purpose of a mainframe is to perform thousands or millions of operations concurrently.</p>
+                        <p>They are often employed by large organizations for bulk data processing, such as census, industry and consumer statistics, enterprise resource planning, and transaction processing.</p>
+                        <p><img src="images/12 HP-Nonstop-Mainframe.png" alt="HP NONSTOP"></p>
+                        <h3>Minicomputers (Mid-range computers)</h3>
+                        <p>These are computers that are smaller, less expensive, and less powerful than a mainframe or supercomputer, but more expensive and more powerful than a personal computer.</p>
+                        <p>They are small and inexpensive computers that do the same tasks as a mainframe computer with limited extent. They are a type of server that can support computer networks and enable users to share files, software, and other resources.</p>
+                        <p><img src="images/14 pdp11-Minicomputer.png" alt="minicomputer"></p>
+                        <p>PDP-11</p>
+                        <h3>Microcomputers</h3>
+                        <p>These are small, relatively inexpensive computers with a microprocessor as their Central Processing Unit (CPU).</p>
+                        <p>These computers use a single microprocessor for its CPU, which performs all logic and arithmetic operations. These are electronic devices that were designed for individual use.</p>
+                        <p><img src="images/Microcomputer-Examples.png" alt="microcomputer"></p>
+                        <h3>Server Computer</h3>
+                        <p>It refers to a central computer that contains collections of data and programs. It is a computer that provides resources, data, services, or programs to other computers, known as clients, over a network.</p>
+                    
+                        <h3>Workstations</h3>
+                        <p>These are high-end, expensive computers that are made for more complex procedures and are intended for one user at a time.</p>
+                        <p>These are special computers designed for technical or scientific applications that are intended primarily to be used by one person at a time.</p>
+                        <p><img src="images/18 Server&Workstations.png" alt="SERVER&WORKSTATION"></p>
+                        <h2>Basic Data Flow Between Hardware Devices</h2>
+                        <p><img src="images/Basic Data Flow Between Hardware Devices.jpg" alt="BDFBHD"></p>
+                        <p>Operations performed by a computer system:</p>
+                        <ul>
+                            <li>Input</li>
+                            <li>Processing</li>
+                            <li>Output</li>
+                            <li>Storage</li>
+                        </ul>
+                    
+                        <h3>Input</h3>
+                        <p>It means to provide or give something to the computer, in other words, when a computer or device is receiving a command or signal from outer sources, the event is referred to as input to the device.</p>
+                        <p>It refers to any data or information that are sent to a computer for processing. It is the manner of entering data and programs into the computer system.</p>
+                        <p>Examples of input devices: keyboard, mouse, joystick, microphone, scanner, web cam, and many others.</p>
+                        <p><img src="images/19 Input-Devices.png" alt="input"></p>
+                        <h3>Processing</h3>
+                        <p>It is the task of performing operations like arithmetic and logical operations.</p>
+                        <p>Example: Microprocessor or CPU that is responsible for handling all instructions and calculations it receives from other hardware components in the computer and software programs running on the computer.</p>
+                        <p><img src="images/20 Processors.png" alt="processors"></p>
+                        <h3>Output</h3>
+                        <p>It is a term that is used to refer to the data generated by a computer and it includes data produced at a software level, such as the result of a calculation, or at a physical level, such as a printed document.</p>
+                        <p>Examples of output devices: monitor, printers, and many others.</p>
+                        <p><img src="images/21 Output Devices.png" alt="output devices"></p>
+                        <h3>Storage</h3>
+                        <p>It is a technology consisting of computer components and recording media that are used to retain digital data. It is a core function and fundamental component of computers.</p>
+                        <p>Examples: Hard Disk, RAM, and others.</p>
+                        <p><img src="images/23 Storage Devices.png" alt="storage"></p>
+    
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

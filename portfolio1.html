@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+
+        h2, h3 {
+            font-size: 24px; 
+        }
+
+        ul {
+            font-size: 20px; 
+        }
+
+        p {
+            font-size: 20px; 
+        }
+        .footer{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">PORTFOLIO 1</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h2>COMPUTER SCIENCE AS A DISCIPLINE</h2>
+                        <p><strong>Overview of Computer Science as a Discipline:</strong><br>
+                            Computer Science (CS) is the scientific study of computational systems, covering both theoretical principles and practical applications. The discipline plays a crucial role in technological development, from the creation of algorithms to the advancement of artificial intelligence and machine learning. CS is foundational for understanding how computers process, store, and communicate information, and it continues to evolve with innovations in computing technologies.</p>
+
+                        <h3>Conceptual Foundations:</h3>
+                        <p>Computer science is built on several fundamental concepts:</p>
+                        <ul>
+                            <li><strong>Computation:</strong> Understanding what can be computed and how.</li>
+                            <li><strong>Programming Languages:</strong> The study and development of languages that allow humans to instruct computers.</li>
+                            <li><strong>Algorithms:</strong> Methods and procedures to solve problems and perform tasks.</li>
+                            <li><strong>Data Structures:</strong> Techniques for organizing and storing data efficiently.</li>
+                            <li><strong>Mathematical Foundations:</strong> Core concepts from mathematics, such as logic and set theory, are used extensively in computer science.</li>
+                        </ul>
+
+                        <h3>Modern Developments in Computer Science:</h3>
+                        <p>Computer science is expanding with advancements in:</p>
+                        <ul>
+                            <li><strong>Artificial Intelligence (AI) and Machine Learning (ML):</strong> Creating systems capable of learning and decision-making.</li>
+                            <li><strong>Bioinformatics:</strong> Using computational techniques to analyze biological data, advancing fields like genetics and healthcare.</li>
+                            <li><strong>Quantum Computing:</strong> A rapidly developing field that uses quantum mechanics to perform complex calculations.</li>
+                        </ul>
+
+                        <h3>Interdisciplinary Connections:</h3>
+                        <p>CS is highly interdisciplinary, with applications in diverse fields:</p>
+                        <ul>
+                            <li><strong>Cognitive Science:</strong> Understanding human thought through computational models.</li>
+                            <li><strong>Biology and Bioinformatics:</strong> Analyzing biological data with computational tools.</li>
+                            <li><strong>Physics:</strong> Simulating physical phenomena using computers.</li>
+                        </ul>
+
+                        <h2>5 COMPUTING DISCIPLINES AND MAJORS</h2>
+                        <p>The field of computing encompasses several disciplines, each with its own focus, methodologies, and applications. Here are five prominent computing disciplines:</p>
+
+                        <h3>Computer Science (CS):</h3>
+                        <p>The core of computing, CS focuses on understanding the theoretical foundations of computation, algorithm design, software development, and the mathematical underpinnings of computer systems. Students in CS explore areas like artificial intelligence, machine learning, algorithms, and software engineering.</p>
+
+                        <h3>Computer Engineering (CE):</h3>
+                        <p>This interdisciplinary field combines electrical engineering with computer science to design and build hardware systems, such as processors, memory devices, and integrated circuits, alongside the software that runs on them. Computer engineers are involved in the development of microprocessors, embedded systems, and the integration of hardware and software.</p>
+
+                        <h3>Information Systems (IS):</h3>
+                        <p>IS focuses on the practical application of computing to solve business problems. It is concerned with designing and managing information systems that support organizational decision-making, efficiency, and data management. Professionals in IS bridge the gap between technical solutions and business needs, ensuring technology aligns with strategic goals.</p>
+
+                        <h3>Information Technology (IT):</h3>
+                        <p>IT involves managing and maintaining computer systems, networks, and data storage. IT professionals focus on infrastructure, ensuring that an organization’s technology systems run smoothly. IT covers areas like network administration, cybersecurity, cloud computing, and data management.</p>
+
+                        <h3>Software Engineering (SE):</h3>
+                        <p>SE applies engineering principles to software development. It focuses on designing, developing, testing, and maintaining software systems to meet specific needs. Software engineers work on everything from creating applications to managing software development lifecycles and ensuring quality through testing and continuous improvement.</p>
+
+                        <h3>Conclusion:</h3>
+                        <p>Computer science is a broad and evolving discipline that touches all areas of modern life, from theoretical foundations to cutting-edge technologies. As a field, it encompasses several specialized areas, including computer science, computer engineering, information systems, information technology, and software engineering, each addressing different aspects of computing. These disciplines are critical in shaping technological innovations and solving complex global challenges, ensuring that computer science remains a key driver of future advancements.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

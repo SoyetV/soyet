@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+
+        .footer{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">SOFTWARE CONCEPTS</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h1>Software Concepts</h1>
+
+    <h2>3.0 What is a Software?</h2>
+    <p>Software is a program that enables a computer to perform a specific task, as opposed to the physical components of the system (hardware). This includes application software such as a word processor, which enables a user to perform a task, and system software such as an operating system, which enables other software to run properly, by interfacing with hardware and with other software.</p>
+    <p>A set of programs, procedures, algorithms and its documentation concerned with the operation of a data processing system.</p>
+
+    <h2>3.1 Types of Software</h2>
+    <p>The different types of software can be put into categories based on common function, type, or field of use. There are three broad classifications:</p>
+    <ul>
+        <li><strong>Application software</strong> are the computer programs for performing user tasks such as word processing and web browsers.</li>
+        <ul>
+            <li>General Purpose Software</li>
+            <li>Specific Purpose Software</li>
+        </ul>
+        <li><strong>System software</strong> is used to start and run computer systems and networks. This includes operating systems.</li>
+        <ul>
+            <li>System Management Software</li>
+            <li>System Development Software</li>
+        </ul>
+        <p><img src="images/type of software.PNG" alt="type of software"></p>
+    </ul>
+    
+    <h3>3.1.2 Application Software</h3>
+    <p>Are programs that are of actual value to the user. From the word “application”, these kinds of software simply “apply” (make use) of the capabilities of the computer (such as high-speed calculations, accuracy given the right algorithm, etc.) to solve anything from simple daily tasks (such as e-mail, word-processing, etc.) to complex special purpose computing (managing the power grid, controlling a nuclear reactor, managing a police database). These can be further classified into two:</p>
+    <ul>
+        <li><strong>General-Purpose Application Software</strong> - Software that perform common information processing jobs for the end-user, such as; word-processing, presentation management, web-browsing, and many more. They are flexible and may be used for many purposes.</li>
+        <li><strong>Application Specific Software</strong> - Software that are designed to accomplish a specific purpose. Examples include ERP, CRM, SCM, and other business applications.</li>
+    </ul>
+    
+    <h3>3.1.2.1 General-Purpose Application Software</h3>
+    <p><strong>Software Suites</strong>: A collection of functionally related software, often sharing similar GUI, bundled together. Software suites save both money and effort that could have been spent by purchasing individual software. Examples include MS Office, Adobe Creativity Suite, LibreOffice, iWork.</p>
+
+    <p>Examples of Office Productivity Suites:</p>
+    <ul>
+        <li>Microsoft Office Suite</li>
+        <li>Libre Office Suite</li>
+        <li>iWork Office Suite</li>
+        <li>Adobe Creativity Suite</li>
+    </ul>
+
+    <h4>A. Office Productivity Suites</h4>
+    <p>Are collections of productivity programs intended to be used by knowledge workers. They include:</p>
+    <ul>
+        <li><strong>Word Processors</strong> - Useful for creating and editing text documents. Includes features such as spell check, grammar check, and table formatting.</li>
+        <li><strong>Electronic Spreadsheets</strong> - Used for organizing, calculating, and analyzing data. Allows mathematical calculations and organization into tables.</li>
+        <li><strong>Presentation Software</strong> - Used for creating slideshows, often with multimedia components like images and animations.</li>
+    </ul>
+
+    <h4>B. Integrated Development Environment Suites</h4>
+    <p>Programs bundled together for the development of new software. These can include code-generating software, CASE-tools, testing and debugging tools, and more. (NOTE: These fall better under the system software category.)</p>
+
+    <h4>C. Graphic Processing Suites</h4>
+    <p>Used for image processing, often include tools for image-authoring, motion-processing, or a combination of these applications.</p>
+
+    <h4>D. Web Browsers</h4>
+    <p>Client software that reads and renders web pages. They have evolved to be more flexible, offering desktop-like applications for various functions such as office productivity, banking transactions, and games.</p>
+
+    <h3>3.1.2.2 Application Specific Software</h3>
+    <p>Application-specific software packages are customized to meet the needs of particular applications, such as eddy-covariance systems, flood-warning systems, and automated weather stations.</p>
+
+    <h4>A. Business Application Software</h4>
+    <p>Built to facilitate certain business functions, improving the accuracy, efficiency, and effectiveness of operations. Examples include:</p>
+    <ul>
+        <li>Enterprise Resource Planning (ERP)</li>
+        <li>Customer Relationship Management (CRM)</li>
+        <li>Database Management Software (DBMS)</li>
+        <li>Project Management Software (PMS)</li>
+        <li>Business Process Management (BPM)</li>
+        <li>Productivity Software</li>
+        <li>Resource Management Software (RMLS)</li>
+        <li>Time Management Software</li>
+        <li>Educational Software</li>
+    </ul>
+
+    <h2>3.2 System Software</h2>
+    <p>Software that is used to create, run, manage, or support the operation of the computer system itself. Examples include operating systems, hardware drivers, and programming languages.</p>
+
+    <h3>3.2.1 Types of System Software</h3>
+    <h4>A. System Management Software</h4>
+    <p>Software that runs, manages, and/or supports computer hardware, networking, application software execution, and data resources. Examples include operating systems and network management programs.</p>
+
+    <h4>B. System Development Software</h4>
+    <p>Tools used to create, debug, maintain, or otherwise support other programs and applications. Examples include programming languages.</p>
+
+    <h5>B.1 Programming Languages</h5>
+    <p>An artificial language designed to communicate instructions to a machine, particularly a computer. Types include:</p>
+    <ul>
+        <li>Procedural Programming Language</li>
+        <li>Functional Programming Language</li>
+        <li>Object-oriented Programming Language</li>
+        <li>Scripting Programming Language</li>
+        <li>Logic Programming Language</li>
+    </ul>
+
+    <h5>B.2 Integrated Development Environments</h5>
+    <p>Suites of programs bundled together for the development of new software. This may include code-generating software, CASE-tools, testing and debugging tools, etc.</p>
+
+    <h2>3.3 Software Hierarchy</h2>
+    <img src="images/software hierarchy.PNG" alt="Software Hierarchy">
+
+    <h2>3.4 Hardware and Software Hierarchy</h2>
+    <img src="images/hardware software hierarchy.PNG" alt="Hardware and Software Hierarchy">
+    
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

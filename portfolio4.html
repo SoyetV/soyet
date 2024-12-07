@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+
+        h2, h3 {
+            font-size: 24px; 
+        }
+
+        ul {
+            font-size: 20px; 
+        }
+
+        p {
+            font-size: 20px; 
+        }
+        .footer{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">PORTFOLIO 4</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+        
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h1>Computer Hardware and Software: Their Implementation in Different Institutions in the Community</h1>
+                        <p><strong>NEAL VELOSO</strong></p>
+
+                        <h2>Computer Hardware</h2>
+                        <h3>Key Books Referenced:</h3>
+                        <ul>
+                            <li><strong>Stallings, W. (2021). Computer Organization and Architecture. Pearson.</strong>
+                                <p>This book provides a comprehensive overview of computer hardware, explaining how various hardware components like processors, memory, and input/output (I/O) systems work together to form an integrated system. It covers fundamental concepts such as system buses, memory hierarchies, and CPU design. This is crucial for understanding the architecture of computers and how hardware decisions can impact system performance.</p>
+                            </li>
+                            <li><strong>Tanenbaum, A. S., & Austin, T. (2012). Structured Computer Organization. Pearson.</strong>
+                                <p>This text breaks down computer hardware across different organizational levels, ranging from microprocessors to complete systems. It offers a detailed explanation of how hardware components at the lower levels, such as microprocessors, are interconnected to form more complex systems. The book focuses on providing a deeper understanding of the critical role of hardware in shaping overall system functionality.</p>
+                            </li>
+                            <li><strong>Hamacher, C., Vranesic, Z., & Zaky, S. (2011). Computer Organization and Embedded Systems. McGraw-Hill.</strong>
+                                <p>The book explores essential hardware concepts with an emphasis on how embedded systems are designed and integrated into larger computer architectures. It explains how embedded systems differ from general-purpose systems, particularly in terms of their dedicated function, power efficiency, and integration into specific devices such as smartphones, medical equipment, and consumer electronics.</p>
+                            </li>
+                            <li><strong>Parhami, B. (2020). Computer Architecture: From Microprocessors to Supercomputers. Oxford University Press.</strong>
+                                <p>This work provides a thorough exploration of the evolution of computer architecture from the earliest microprocessors to advanced high-performance supercomputers. It emphasizes the role of architectural design in maximizing computing power and efficiency, which is vital for applications ranging from scientific simulations to big data processing.</p>
+                            </li>
+                            <li><strong>Bovet, D. P., & Cesati, M. (2014). Understanding the Linux Kernel: From I/O Ports to Process Management. O'Reilly Media.</strong>
+                                <p>This book delves into the Linux operating system's kernel and its interaction with hardware. It explains key concepts such as I/O ports, process management, and memory management, which are essential for understanding how the software communicates with and utilizes the underlying hardware.</p>
+                            </li>
+                        </ul>
+                        <h2>Software</h2>
+                    <h3>Key Books Referenced:</h3>
+                    <ul>
+                        <li><strong>Sommerville, I. (2020). Software Engineering. Pearson.</strong>
+                            <p>This book provides an in-depth introduction to the principles of software design, development, and maintenance. It explores the software development life cycle (SDLC), from requirements gathering to design, implementation, testing, deployment, and maintenance. Software engineering practices such as agile methodologies and project management techniques are also covered.</p>
+                        </li>
+                        <li><strong>Pressman, R. S. (2019). Software Engineering: A Practitioner’s Approach. McGraw-Hill Education.</strong>
+                            <p>A staple in the field, Pressman’s book offers practical insights into the methodologies, tools, and processes involved in creating reliable and efficient software. It delves into both the technical and managerial aspects of software engineering, highlighting best practices in software development.</p>
+                        </li>
+                        <li><strong>Dale, N., & Lewis, J. (2022). Computer Science Illuminated. Jones & Bartlett Learning.</strong>
+                            <p>This comprehensive text introduces readers to the world of software types, from operating systems to applications. It highlights the role software plays in supporting hardware functionality, focusing on how software enables devices to perform useful tasks, from processing data to user interaction.</p>
+                        </li>
+                        <li><strong>Hennessy, J. L., & Patterson, D. A. (2017). Computer Architecture: A Quantitative Approach. Morgan Kaufmann.</strong>
+                            <p>This book explains the relationship between software and hardware, with particular emphasis on how software optimizations can improve hardware performance. The interaction between architecture and software design is explored in-depth, showing how architectural decisions directly impact software performance.</p>
+                        </li>
+                        <li><strong>Martin, R. C. (2021). Clean Architecture: A Craftsman’s Guide to Software Structure and Design. Pearson.</strong>
+                            <p>Martin's work focuses on writing clean, maintainable, and scalable code. He discusses the importance of good architectural design and explains how developers can structure their software systems for long-term success, making it easier to modify and extend over time.</p>
+                        </li>
+                    </ul>
+
+                    <h3>Key Points:</h3>
+                    <h4>Categories of Software:</h4>
+                    <ul>
+                        <li><strong>Operating Systems:</strong> Manage hardware resources and provide a user interface. Examples include Windows, Linux, and macOS.</li>
+                        <li><strong>Application Software:</strong> Programs that help users complete specific tasks, such as word processors, web browsers, and games.</li>
+                        <li><strong>Development Tools:</strong> Software like compilers, debuggers, and IDEs that are used to create other software.</li>
+                    </ul>
+
+                    <h4>Software Life Cycle:</h4>
+                    <ul>
+                        <li>The software life cycle includes the stages of software development: planning, designing, coding, testing, and maintaining.</li>
+                        <li>Proper management during each stage ensures that software is functional, reliable, and adaptable to changes in technology or user requirements.</li>
+                    </ul>
+
+                    <h4>Software-Hardware Integration:</h4>
+                    <ul>
+                        <li>Software is designed to leverage specific hardware features, maximizing performance. For instance, modern software can be written to exploit multi-core processors or high-speed memory, resulting in more efficient execution and better overall performance.</li>
+                    </ul>
+
+                    <h4>Evolution:</h4>
+                    <ul>
+                        <li>As new technologies emerge, software development practices evolve. New programming languages, tools, and frameworks are introduced to address new challenges. Cloud computing, mobile apps, and artificial intelligence are transforming how software is developed, deployed, and maintained.</li>
+                    </ul>
+
+                    <h2>Implementation in Community Institutions</h2>
+                    <h3>Key Books and Articles Referenced:</h3>
+                    <ul>
+                        <li><strong>Brynjolfsson, E., & McAfee, A. (2014). The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies. W.W. Norton & Company.</strong>
+                            <p>This work explores how digital technologies, such as advancements in computing hardware and software, are reshaping industries, including education, healthcare, and governance. It discusses how automation and AI are changing the way work is performed.</p>
+                        </li>
+                        <li><strong>Gartner, J. W. (2020). "Technology Adoption in Public Institutions." Journal of Technology and Society, 52(3), 301-315.</strong>
+                            <p>This article highlights the challenges and successes that public institutions (like schools, hospitals, and government offices) face when adopting new technologies. It provides insight into how hardware and software are integrated into institutional workflows to enhance service delivery.</p>
+                        </li>
+                        <li><strong>O’Brien, J. A., & Marakas, G. M. (2018). Management Information Systems. McGraw-Hill Education.</strong>
+                            <p>This book provides a detailed analysis of how information systems, incorporating both hardware and software, help manage and improve processes within community institutions like educational systems and local governments.</p>
+                        </li>
+                        <li><strong>Heeks, R. (2018). Information and Communication Technology for Development (ICT4D). Routledge.</strong>
+                            <p>This book explores how ICT is used in institutions that focus on development and social progress, including NGOs and community health organizations. It covers both the challenges and the opportunities that technology offers in these settings.</p>
+                        </li>
+                        <li><strong>Zastrow, M. (2019). "Digital Divide and Technology in Community Education." Technology in Society, 60, 101-115.</strong>
+                            <p>This article discusses the gap between communities that have access to digital technologies and those that don’t. It analyzes how digital technology is being implemented in educational institutions and its impact on learning outcomes.</p>
+                        </li>
+                    </ul>
+
+                    <h3>Key Points:</h3>
+                    <h4>Impact on Community Institutions:</h4>
+                    <ul>
+                        <li>In schools, hospitals, and government offices, the implementation of hardware and software has streamlined operations and improved services. Digital technologies enable institutions to offer more personalized and efficient services.</li>
+                    </ul>
+
+                    <h4>Challenges:</h4>
+                    <ul>
+                        <li>Despite the potential benefits, many institutions face barriers such as funding limitations, digital literacy gaps, and infrastructure challenges. These obstacles are particularly prevalent in rural or economically disadvantaged areas.</li>
+                    </ul>
+
+                    <h4>Trends:</h4>
+                    <ul>
+                        <li>Cloud computing and mobile applications are driving innovation in community institutions. These technologies allow institutions to offer services more flexibly and efficiently, while data analytics software aids in informed decision-making.</li>
+                    </ul>
+
+                    <h4>Community Outreach:</h4>
+                    <ul>
+                        <li>Technology enables broader engagement by connecting institutions with the wider community. Virtual learning platforms, telemedicine, and online government services have enhanced accessibility and participation.</li>
+                    </ul>
+
+                    <h3>Analysis:</h3>
+                    <p>The combination of advanced computer hardware and software in community institutions has been transformative. It allows for more effective service delivery, better data management, and enhanced user experiences. Hardware improvements in processing power, memory, and networking have made previously impossible tasks feasible, while software developments, particularly in data management and decision support systems, have enabled institutions to make better, data-driven decisions. However, challenges remain in terms of infrastructure, budget constraints, and the need for ongoing digital literacy programs.</p>
+                    <p>By continuing to invest in these technologies and overcoming existing barriers, community institutions can unlock new opportunities for enhanced service delivery and greater societal benefit.</p>
+                </div>
+                
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

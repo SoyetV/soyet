@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+
+        h2, h3 {
+            font-size: 24px; 
+        }
+
+        ul {
+            font-size: 20px; 
+        }
+
+        p {
+            font-size: 20px; 
+        }
+        .footer{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>      
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">PORTFOLIO 6</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+        
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h1>Comparative Study on Different Types of Computers</h1>
+<p><strong>Presented by Neal Veloso</strong></p>
+
+<h2>Introduction</h2>
+<p>The evolution of computers has resulted in a wide variety of types, each designed for specific environments and applications. This study provides a comprehensive comparison of different computer types, including supercomputers, mainframe computers, mini computers, servers, workstations, and microcomputers. The discussion highlights their characteristics, applications, and performance metrics, with a detailed comparison of mini computers, microcomputers, workstations, and servers.</p>
+
+<h2>Discussion</h2>
+<p>Computers can be categorized based on their size, processing power, functionality, and specific application areas. Each type is suited to distinct fields and varies in energy consumption, memory capacity, and computational power. Below is a breakdown of the different types of computers:</p>
+
+<h3>Supercomputers</h3>
+<p><strong>Description:</strong> Highly specialized systems designed for complex calculations such as weather modeling, nuclear simulations, and large-scale scientific research.</p>
+<p><strong>Applications:</strong> Used in scientific research, climate forecasting, and advanced simulations.</p>
+
+<h3>Mainframe Computers</h3>
+<p><strong>Description:</strong> Large-scale systems primarily used by enterprises for critical applications such as bulk data processing and enterprise resource management.</p>
+<p><strong>Applications:</strong> Used in large organizations, government agencies, and financial institutions for tasks requiring high reliability and large-scale data processing.</p>
+
+<h3>Mini Computers</h3>
+<p><strong>Description:</strong> Medium-sized systems that balance performance and size, often used for tasks like process control and mid-level data management.</p>
+<p><strong>Applications:</strong> Commonly employed in small to medium-sized businesses for operations like data management and control systems.</p>
+
+<h3>Servers</h3>
+<p><strong>Description:</strong> Systems designed to provide services to multiple clients over a network, from simple file servers to high-performance computing servers.</p>
+<p><strong>Applications:</strong> Used for web hosting, data storage, and handling multiple requests from users or clients.</p>
+
+<h3>Workstations</h3>
+<p><strong>Description:</strong> High-performance personal computers optimized for technical and scientific applications, often used by engineers, designers, and researchers.</p>
+<p><strong>Applications:</strong> Commonly used in specialized fields such as CAD, AI development, and graphics rendering.</p>
+
+<h3>Microcomputers</h3>
+<p><strong>Description:</strong> Consumer-grade computers, including desktops, laptops, and tablets, primarily for personal and small-business use.</p>
+<p><strong>Applications:</strong> Used for general-purpose tasks such as office work, entertainment, and personal computing.</p>
+
+<h2>Comparison Table: Characteristics of Different Types of Computers</h2>
+<table>
+    <tr>
+        <th>Type of Computer</th>
+        <th>Name/Brand</th>
+        <th>CPU</th>
+        <th>Memory</th>
+        <th>Processing Speed</th>
+        <th>Computing Power</th>
+        <th>Working Principle</th>
+        <th>Energy Consumption</th>
+        <th>Field of Use</th>
+    </tr>
+    <tr>
+        <td>Supercomputer</td>
+        <td>IBM Summit</td>
+        <td>2.4 GHz, multicore, custom GPUs</td>
+        <td>10 PB</td>
+        <td>200 PFLOPS</td>
+        <td>Parallel processing</td>
+        <td>High</td>
+        <td>Scientific research</td>
+    </tr>
+    <tr>
+        <td>Mainframe</td>
+        <td>IBM z16</td>
+        <td>Multi-core, 5.2 GHz</td>
+        <td>1.5 TB</td>
+        <td>200 PFLOPS</td>
+        <td>Batch processing</td>
+        <td>High</td>
+        <td>Banking, government</td>
+    </tr>
+    <tr>
+        <td>Mini Computer</td>
+        <td>HPE Integrity rx2800</td>
+        <td>Intel Itanium 9560 2.53 GHz</td>
+        <td>256 GB</td>
+        <td>15 MIPS</td>
+        <td>Moderate</td>
+        <td>Moderate</td>
+        <td>Process control, education</td>
+    </tr>
+    <tr>
+        <td>Server</td>
+        <td>Dell PowerEdge R960</td>
+        <td>Intel Xeon Platinum 3.6 GHz, 32-core</td>
+        <td>512 GB</td>
+        <td>1 TFLOPS</td>
+        <td>Multi-user access</td>
+        <td>High</td>
+        <td>Web hosting, application deployment</td>
+    </tr>
+    <tr>
+        <td>Workstation</td>
+        <td>HP Z8 G4</td>
+        <td>Intel Xeon Gold 3.8 GHz, 16-core</td>
+        <td>128 GB</td>
+        <td>1.5 TFLOPS</td>
+        <td>Individual tasks</td>
+        <td>High</td>
+        <td>CAD, AI development</td>
+    </tr>
+    <tr>
+        <td>Microcomputer</td>
+        <td>Apple MacBook Pro</td>
+        <td>M2 Max Chip, 12-core CPU, 38-core GPU</td>
+        <td>64 GB</td>
+        <td>20 TFLOPS</td>
+        <td>Personal computing</td>
+        <td>Low</td>
+        <td>Home, small offices</td>
+    </tr>
+</table>
+
+<h2>Examples and Usage</h2>
+<table>
+    <tr>
+        <th>Type of Computer</th>
+        <th>Sample Image</th>
+        <th>Description</th>
+        <th>Usage</th>
+    </tr>
+    <tr>
+        <td>Supercomputer</td>
+        <td>[Insert Image]</td>
+        <td>Designed for large-scale computation; extremely expensive and energy-intensive.</td>
+        <td>Climate modeling, genome analysis</td>
+    </tr>
+    <tr>
+        <td>Mainframe</td>
+        <td>[Insert Image]</td>
+        <td>Built for reliability and scalability; supports thousands of users simultaneously.</td>
+        <td>Enterprise-level data processing</td>
+    </tr>
+    <tr>
+        <td>Mini Computer</td>
+        <td>[Insert Image]</td>
+        <td>Compact and efficient; smaller than mainframes.</td>
+        <td>Small business management, education</td>
+    </tr>
+    <tr>
+        <td>Server</td>
+        <td>[Insert Image]</td>
+        <td>Provides services to multiple clients over a network.</td>
+        <td>Web hosting, application deployment</td>
+    </tr>
+    <tr>
+        <td>Workstation</td>
+        <td>[Insert Image]</td>
+        <td>High-performance PCs for individual technical work.</td>
+        <td>Graphics design, AI, engineering</td>
+    </tr>
+    <tr>
+        <td>Microcomputer</td>
+        <td>[Insert Image]</td>
+        <td>Consumer-grade computers for general use.</td>
+        <td>Home, personal, and office use</td>
+    </tr>
+</table>
+
+<h2>References</h2>
+<ul>
+    <li>Tanenbaum, A. S., & Bos, H. (2014). Modern Operating Systems. Pearson.</li>
+    <li>Hennessy, J. L., & Patterson, D. A. (2020). Computer Architecture: A Quantitative Approach. Morgan Kaufmann.</li>
+    <li>IBM. (2024). IBM z16 Technical Specifications.</li>
+    <li>Dell Technologies. (2024). Dell PowerEdge Server Portfolio Overview.</li>
+</ul>
+
+        
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

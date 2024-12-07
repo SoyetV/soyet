@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOYET</title>
+    <style>
+        body {
+            background-image: url(images/Van\ Gogh.jpg); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            height: 100vh;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-item:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar img {
+            margin-right: 12px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .welcome-text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .portfolio-table {
+            width: 90%;
+            height: auto;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 30px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .scroll-box {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; 
+            line-height: 1.8; 
+        }
+
+        h2, h3 {
+            font-size: 24px; 
+        }
+
+        ul {
+            font-size: 20px; 
+        }
+
+        p {
+            font-size: 20px; 
+        }
+        .footer{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>  
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/Van gogh video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <a href="home.html">
+                <img src="images/home icon.png" alt="Home icon" width="50">
+                <br>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Topic.html">
+                <img src="images/Topic.png" alt="Topic icon" width="50">
+                <br>
+                <span>Topic</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Portfolio.html">
+                <img src="images/portfolio.png" alt="Portfolio icon" width="50">
+                <br>
+                <span>Portfolio</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="aboutMe.html">
+                <img src="images/profile icon.png" alt="Profile icon" width="50">
+                <br>
+                <span>About Me</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="contact.html">
+                <img src="images/contact.png" alt="Contact icon" width="50">
+                <br>
+                <span>Contact</span>
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="welcome-text">PORTFOLIO 2</div>
+            <img src="images/neal.jpg" alt="My Profile" class="profile-image" width="80" height="80">
+        </div>
+
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="scroll-box">
+                        <h2>DATA AND INFORMATION</h2>
+                        <p><strong>Definition and Importance:</strong></p>
+                        <p>Data refers to raw, unorganized facts that need processing to become meaningful. Examples include numbers, names, dates, and statistics without interpretation.</p>
+                        <p>Information is processed, organized, and structured data that has meaning and is useful for decision-making. For instance, a report showing trends in sales figures is information derived from raw sales data.</p>
+
+                        <h3>Data in Organizations</h3>
+                        <ul>
+                            <li><strong>Role in Business:</strong> Data acts as the foundation for all processes, from operational tasks to strategic planning.</li>
+                            <li><strong>Transformation:</strong> Data is transformed into information through processes like sorting, analyzing, and summarizing. For example, customer feedback (data) becomes actionable insights (information) when analyzed.</li>
+                            <li><strong>Examples of Use:</strong></li>
+                            <ul>
+                                <li>Operational Use: Daily logs or attendance records.</li>
+                                <li>Strategic Use: Using sales trends to decide on future product launches.</li>
+                            </ul>
+                        </ul>
+
+                        <h2>INFORMATION SYSTEMS</h2>
+                        <p><strong>What Are Information Systems?</strong></p>
+                        <p>Information Systems (IS) are integrated tools and frameworks that collect, process, store, and disseminate information to support decision-making and organizational operations.</p>
+
+                        <h3>Components of Information Systems</h3>
+                        <ul>
+                            <li><strong>Hardware:</strong> Computers, servers, and other physical devices used to collect and store data.</li>
+                            <li><strong>Software:</strong> Applications and programs that process data (e.g., Microsoft Excel, SAP, Oracle).</li>
+                            <li><strong>Data:</strong> The core element; includes raw and processed data.</li>
+                            <li><strong>Processes:</strong> Sets of instructions and workflows that transform data into useful information.</li>
+                            <li><strong>People:</strong> End-users, managers, and IT professionals who design, operate, and maintain systems.</li>
+                        </ul>
+
+                        <h3>Functions of Information Systems</h3>
+                        <ul>
+                            <li>Data Collection and Storage: Systems collect data from various sources like sales, inventory, or customer interactions.</li>
+                            <li>Data Processing: Converts raw data into organized formats such as reports, charts, or actionable insights.</li>
+                            <li>Support Decision-Making: Provides timely and relevant information for operational, tactical, and strategic decisions.</li>
+                        </ul>
+
+                        <h3>Advantages of Information Systems</h3>
+                        <ul>
+                            <li>Improved Efficiency: Automates repetitive tasks.</li>
+                            <li>Real-Time Information: Ensures quick decision-making with live data.</li>
+                            <li>Enhanced Collaboration: Facilitates communication within and across departments.</li>
+                            <li>Competitive Advantage: Supports innovation and strategy development.</li>
+                        </ul>
+
+                        <h3>Challenges</h3>
+                        <ul>
+                            <li>High implementation costs.</li>
+                            <li>Resistance to change among employees.</li>
+                            <li>Security concerns like data breaches and system vulnerabilities.</li>
+                        </ul>
+
+                        <h2>DIFFERENT TYPES OF SUPPORT SYSTEMS IN INFORMATION SYSTEMS</h2>
+                        <ol>
+                            <li><strong>Transaction Processing Systems (TPS):</strong> Manages routine, structured tasks such as order processing, payroll, or inventory tracking. Example: A point-of-sale (POS) system in retail stores that records purchases and updates inventory in real time.</li>
+                            <li><strong>Management Information Systems (MIS):</strong> Designed for middle management to provide reports summarizing organizational performance. Example: Monthly sales reports for analyzing product performance.</li>
+                            <li><strong>Decision Support Systems (DSS):</strong> Assists in analyzing complex, semi-structured problems. Example: A system helping in determining pricing strategies based on competitor behavior.</li>
+                            <li><strong>Executive Information Systems (EIS):</strong> Tailored for senior executives to access high-level overviews of performance metrics. Example: A CEO’s dashboard showing global sales trends and regional performance.</li>
+                            <li><strong>Expert Systems:</strong> Uses artificial intelligence (AI) to simulate expert-level decision-making. Example: A diagnostic system used in healthcare to recommend treatments.</li>
+                            <li><strong>Office Automation Systems (OAS):</strong> Focuses on increasing employee productivity by providing tools for document preparation, communication, and scheduling. Example: Tools like Google Workspace or Microsoft Office 365.</li>
+                            <li><strong>Knowledge Management Systems (KMS):</strong> Designed to facilitate the sharing and management of organizational knowledge. Example: A corporate wiki used to store company policies, FAQs, and training materials.</li>
+                        </ol>
+
+                        <h3>Importance of Support Systems in Modern Organizations</h3>
+                        <ul>
+                            <li>Enhance Productivity: Automates mundane tasks and reduces manual effort.</li>
+                            <li>Improve Decision-Making: Provides accurate and relevant data for better judgments.</li>
+                            <li>Enable Scalability: Adapts to growing organizational needs with minimal additional cost.</li>
+                            <li>Foster Innovation: Frees up time for creative problem-solving by handling routine activities.</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            &copy; 2024 Soyet. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
